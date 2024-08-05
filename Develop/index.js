@@ -27,6 +27,16 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'videoURL',
+        message: 'Provide a URL to a video demonstrating the project:',
+    },
+    {
+        type: 'input',
+        name: 'screenshots',
+        message: 'Provide URLs to screenshots (comma-separated):',
+    },
+    {
+        type: 'input',
         name: 'contributing',
         message: 'Provide contribution guidelines:',
     },
@@ -68,6 +78,8 @@ function init() {
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
+    const screenshots = data.screenshots.split(',').map(url => `![Screenshot](${url.trim()})`).join('\n');
+
     return `
 # ${data.title}
 
@@ -79,6 +91,12 @@ ${data.installation}
 
 ## Usage
 ${data.usage}
+
+### Video
+[Watch the video demonstration](${data.videoURL})
+
+### Screenshots
+${screenshots}
 
 ## Contributing
 ${data.contributing}
