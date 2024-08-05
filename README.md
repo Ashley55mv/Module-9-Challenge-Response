@@ -2,19 +2,25 @@
 # Module 9 Challenge
 
 ## Description
-This is a command line application hat dynamically generates a professional README.md file from a user's input using the inquirer package
+This is a response to the Module 9 Challenge to create a readme file dynamically
 
 ## Installation
-In order to install inquirer please use npm i inquirer@8.2.4
+Install the inquirer package using npm i inquirer@8.2.4
 
 ## Usage
-As a developer you can use this README generator to quickly create a professional README for a new project
+Refer to the attached video to show the application working
+
+### Video
+[Watch the video demonstration](https://drive.google.com/file/d/1AEY1NdszixVSaHo33k_2ToN6TBqFlPgK/view)
+
+### Screenshots
+![Screenshot]()
 
 ## Contributing
-This project was created using the assistance of Github Copilot
+
 
 ## Tests
-Test the code by running npm test
+Test using npm test
 
 ## License
 This project is licensed under the GPLv3 license.
